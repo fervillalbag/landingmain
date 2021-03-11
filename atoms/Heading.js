@@ -1,6 +1,6 @@
 
 import { Fragment } from 'react'
-import { colors } from '../utils/colors'
+import { colors } from '../settings/colors'
 
 export default function Heading({ children }) {
   return (
@@ -12,7 +12,14 @@ export default function Heading({ children }) {
           font-size: 5.6rem;          
           font-weight: 700;
           color: ${colors.DarkBlue};
-        }  
+          margin: 1rem 0;
+        }
+
+        @media screen and (max-width: 680px) {
+          h1 {
+            font-size: 3.8rem;
+          }
+        }
       `}</style>
     </Fragment>
   )

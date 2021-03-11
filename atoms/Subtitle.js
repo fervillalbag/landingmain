@@ -1,8 +1,8 @@
 
 import React, { Fragment } from 'react'
-import { colors } from '../utils/colors'
+import { colors } from '../settings/colors'
 
-export default function Subtitle({ children }) {
+export default function Subtitle({ children, margin = "1" }) {
   return (
     <Fragment>
       <h3>{children}</h3>
@@ -11,7 +11,14 @@ export default function Subtitle({ children }) {
         h3 {
           font-size: 2.6rem;
           color: ${colors.DarkBlue};
-        }    
+          margin: ${margin + `rem 0`};
+        }
+
+        @media screen and (max-width: 768px) {
+          h3 {
+            font-size: 1.6rem;
+          }
+        }
       `}</style>
     </Fragment>
   )

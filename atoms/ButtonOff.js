@@ -1,26 +1,19 @@
 
-import Link from 'next/link'
 import { Fragment } from 'react'
 import { colors } from '../settings/colors'
 
-export default function Button({ children, href = "/", color }) {
+export default function ButtonOff({ children }) {
 
   return (
     <Fragment>
-      <Link href={href}>
-        <a>{children}</a>
-      </Link>
+      <span>
+        {children}
+      </span>
 
       <style jsx>{`
-        a {
-          background-color: 
-          ${color === 'light'
-          ? colors.VaryLightGray
-          : colors.BrightRed};
-          
-          color: ${color === 'light'
-          ? colors.BrightRed
-          : colors.VaryLightGray};
+        span {
+          background-color: ${colors.BrightRed};
+          color: ${colors.VaryLightGray};
 
           font-weight: 700;
           padding: 1.1rem 2.5rem;

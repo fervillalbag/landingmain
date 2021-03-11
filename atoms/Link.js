@@ -1,12 +1,9 @@
 
 import Link from 'next/link'
 import React, { Fragment } from 'react'
-import { colors } from '../utils/colors'
+import { colors } from '../settings/colors'
 
 export default function NavLink({ children, href, color, align }) {
-
-  console.log(align)
-
   return (
     <Fragment>
       <Link href={href}>
@@ -25,11 +22,7 @@ export default function NavLink({ children, href, color, align }) {
           margin-right: ${align === 'horizontal'
           ? '2.5rem' : '0'};
           margin-bottom: ${align === 'vertical'
-          ? '1.75rem' : '0'}
-        }
-
-        a:last-of-type {
-          margin-right: 0;
+          ? '2rem' : '0'}
         }
       `}</style>
     </Fragment>

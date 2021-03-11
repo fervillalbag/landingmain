@@ -12,7 +12,7 @@ export default function ToggleBtn({ children, handleClick }) {
 
       <style jsx>{`
         button {
-          background-color: ${colors.transparent};
+          background-color: ${colors.Transparent};
 
           outline: none;
           cursor: pointer;  

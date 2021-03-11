@@ -12,12 +12,6 @@ export default function Image({ src = "", alt = "", width = "" }) {
           max-width: 100%;
           display: block;
         }
-
-        @media screen and (max-width: 768px) {
-          img {
-            width: 100%;
-          }
-        }
       `}</style>
     </Fragment>
   )

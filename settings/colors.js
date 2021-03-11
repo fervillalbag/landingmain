@@ -6,5 +6,6 @@ export const colors = {
   VeryDarkBlue: 'hsl(233deg, 12%, 13%)',
   VeryPaleRed: 'hsl(13deg, 100%, 96%)',
   VaryLightGray: 'hsl(0deg, 0%, 98%)',
-  transparent: 'transparent'
+  Transparent: 'transparent',
+  LightColor: '${colors.LightColor}'
 }

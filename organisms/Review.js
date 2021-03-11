@@ -1,27 +1,35 @@
 
+import { useEffect, useState } from 'react'
 import Title from '../atoms/Title'
 import CardReview from '../molecules/CardReview'
+import { DATA_REVIEW_JSON } from '../utils/constants'
 
 export default function Review() {
+
+  const [data, setData] = useState(null)
+
+  useEffect(() => {
+    (async () => {
+      const data = await fetch(DATA_REVIEW_JSON)
+      const result = await data.json()
+      setData(result)
+    })()
+  }, [])
+
+  if (!data) return null
+
   return (
     <div>
       <Title>What they’ve said</Title>
       <main>
-        <CardReview
-          image="avatar-anisha.png"
-          name="Anisha Li"
-          message="“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”"
-        />
-        <CardReview
-          image="avatar-ali.png"
-          name="Ali Bravo"
-          message="“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”"
-        />
-        <CardReview
-          image="avatar-richard.png"
-          name="Richard Watts"
-          message="“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”"
-        />
+        {data.map(dataItem => (
+          <CardReview
+            key={dataItem.id}
+            image={dataItem.image}
+            name={dataItem.name}
+            message={dataItem.message}
+          />
+        ))}
       </main>
 
       <style jsx>{`

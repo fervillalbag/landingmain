@@ -30,7 +30,7 @@ export default function Aboutus() {
       <aside>
         {data.map(dataItem => (
           <AboutItem
-            key={dataItem.number}
+            key={dataItem.id}
             number={dataItem.number}
             subtitle={dataItem.subtitle}
             description={dataItem.description}

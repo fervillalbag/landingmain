@@ -20,8 +20,7 @@ export default function Review() {
         <CardReview
           image="avatar-richard.png"
           name="Richard Watts"
-          message="“Manage allows us to provide structure and process. It keeps us organized
-  and focused. I can’t stop recommending them to everyone I talk to!”"
+          message="“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”"
         />
       </main>
 

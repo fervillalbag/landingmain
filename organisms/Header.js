@@ -28,11 +28,11 @@ export default function Header() {
         </aside>
         <div className="bars">
           <ToggleBtn handleClick={handleClick}>
-            {isActive ? (
-              <Image src="icon-close.svg" alt="Toggle Btn" />
-            ) : (
-              <Image src="icon-hamburger.svg" alt="Toggle Btn" />
-            )}
+            <Image src={isActive
+              ? 'icon-close.svg'
+              : 'icon-hamburger.svg'}
+              alt="Toggle Btn"
+            />
           </ToggleBtn>
         </div>
       </div>

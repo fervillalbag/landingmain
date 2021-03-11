@@ -1,9 +1,24 @@
 
+import { useEffect, useState } from "react"
 import Description from "../atoms/Description"
 import Title from "../atoms/Title"
 import AboutItem from "../molecules/AboutItem"
+import { DATA_ABOUT_JSON } from '../utils/constants'
 
 export default function Aboutus() {
+
+  const [data, setData] = useState(null)
+
+  useEffect(() => {
+    (async () => {
+      const data = await fetch(DATA_ABOUT_JSON)
+      const result = await data.json()
+      setData(result)
+    })()
+  }, [])
+
+  if (!data) return null
+
   return (
     <section>
 
@@ -13,21 +28,14 @@ export default function Aboutus() {
         </Description>
       </div>
       <aside>
-        <AboutItem
-          number="01"
-          subtitle="Track company-wide progress"
-          description="See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the  level all the way done to the smallest of details. Never lose sight of the bigger picture again."
-        />
-        <AboutItem
-          number="02"
-          subtitle="Advanced built-in reports"
-          description="Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed."
-        />
-        <AboutItem
-          number="03"
-          subtitle="Everything you need in one place"
-          description="Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution."
-        />
+        {data.map(dataItem => (
+          <AboutItem
+            key={dataItem.number}
+            number={dataItem.number}
+            subtitle={dataItem.subtitle}
+            description={dataItem.description}
+          />
+        ))}
       </aside>
 
       <style jsx>{`

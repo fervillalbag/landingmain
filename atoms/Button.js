@@ -1,7 +1,7 @@
 
-import Link from 'next/link'
 import { Fragment } from 'react'
 import { colors } from '../settings/colors'
+import Link from 'next/link'
 
 export default function Button({ children, href = "/", color }) {
 

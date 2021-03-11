@@ -1,5 +1,5 @@
 
-import React, { Fragment } from 'react'
+import { Fragment } from 'react'
 import { colors } from '../settings/colors'
 
 export default function Subtitle({ children, margin = "1" }) {

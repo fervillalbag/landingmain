@@ -14,6 +14,15 @@ export default function HeaderNav() {
         div {
           display: flex;
         }
+
+        @media screen and (max-width: 680px) {
+          div {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 2rem;
+          }
+        }
       `}</style>
     </div>
 

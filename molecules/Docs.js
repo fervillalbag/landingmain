@@ -1,5 +1,4 @@
 
-import React from 'react'
 import Button from '../atoms/Button'
 import Title from '../atoms/Title'
 import { colors } from '../settings/colors'

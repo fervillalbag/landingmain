@@ -1,6 +1,6 @@
 
+import { Fragment } from 'react'
 import Link from 'next/link'
-import React, { Fragment } from 'react'
 import { colors } from '../settings/colors'
 
 export default function NavLink({ children, href, color, align }) {
@@ -23,6 +23,13 @@ export default function NavLink({ children, href, color, align }) {
           ? '2.5rem' : '0'};
           margin-bottom: ${align === 'vertical'
           ? '2rem' : '0'}
+        }
+
+        @media screen and (max-width: 680px) {
+          a {
+            margin-right: 0;
+            font-size: 1.75rem;
+          }
         }
       `}</style>
     </Fragment>

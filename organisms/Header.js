@@ -1,9 +1,17 @@
 
+import { useState } from 'react'
 import Button from '../atoms/Button'
+import Image from '../atoms/Image'
+import ToggleBtn from '../atoms/ToggleBtn'
 import Brand from '../molecules/Brand'
 import HeaderNav from '../molecules/HeaderNav'
+import { colors } from '../settings/colors'
 
 export default function Header() {
+
+  const [isActive, setIsActive] = useState(false);
+  const handleClick = () => setIsActive(!isActive)
+
   return (
     <nav>
       <div>
@@ -12,12 +20,21 @@ export default function Header() {
           src={`logo.svg`}
           alt={`Logo de la Empresa`}
         />
-        <main>
+        <main className={isActive && 'active'}>
           <HeaderNav />
         </main>
         <aside>
           <Button>Get Started</Button>
         </aside>
+        <div className="bars" onClick={handleClick}>
+          <ToggleBtn>
+            {isActive ? (
+              <Image src="icon-close.svg" alt="Toggle Btn" />
+            ) : (
+              <Image src="icon-hamburger.svg" alt="Toggle Btn" />
+            )}
+          </ToggleBtn>
+        </div>
       </div>
 
       <style jsx>{`
@@ -42,8 +59,28 @@ export default function Header() {
         }
 
         @media screen and (max-width: 680px) {
+          .bars {
+            display: flex;
+            justify-content: flex-end;
+          }
+          
           main {
-            display: none;
+            position: fixed;
+            top: 10rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(1000px);
+            width: 80%;
+            padding: 3rem 0;
+            background-color: ${colors.VaryLightGray};
+            transition: all 300ms ease;
+
+            -webkit-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.2);
+            box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.2);
+          }
+
+          main.active {
+            transform: translateX(-50%) translateY(0);
           }
         }
       `}</style>

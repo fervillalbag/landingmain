@@ -1,6 +1,7 @@
-import Description from "../atoms/Description";
-import Image from "../atoms/Image";
-import Subtitle from "../atoms/Subtitle";
+
+import Description from "../atoms/Description"
+import Image from "../atoms/Image"
+import Subtitle from "../atoms/Subtitle"
 
 export default function CardReview({ image, name, message }) {
   return (

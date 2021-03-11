@@ -1,5 +1,4 @@
 
-import React from 'react'
 import Title from '../atoms/Title'
 import CardReview from '../molecules/CardReview'
 

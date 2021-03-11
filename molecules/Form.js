@@ -1,5 +1,4 @@
 
-import React from 'react'
 import Submit from '../atoms/Submit'
 import Input from '../atoms/Input'
 

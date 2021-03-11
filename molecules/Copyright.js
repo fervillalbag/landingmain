@@ -1,5 +1,4 @@
 
-import React from 'react'
 import Description from '../atoms/Description'
 
 export default function Copyright() {

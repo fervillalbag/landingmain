@@ -10,6 +10,8 @@ In figma I make a scheme to determine what types of elements are atoms, molecule
 ![alt text](https://res.cloudinary.com/da6b7skw8/image/upload/v1615473440/02_air6yg.jpg)
 ![alt text](https://res.cloudinary.com/da6b7skw8/image/upload/v1615473439/03_zyqpxd.jpg)
 
+The development took in total about 6 hours of planning and development
+
 Capture of the moment I finished building all the atoms
 
 ![alt text](https://res.cloudinary.com/da6b7skw8/image/upload/v1615473791/04_tcfuqs.jpg)

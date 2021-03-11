@@ -58,6 +58,10 @@ export default function Header() {
           }
         }
 
+        .bars {
+          display: none;
+        }
+
         @media screen and (max-width: 680px) {
           .bars {
             display: flex;

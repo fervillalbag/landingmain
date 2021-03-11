@@ -8,7 +8,7 @@ export default function HeaderNav() {
       <Link align="horizontal" href={`/`}>Product</Link>
       <Link align="horizontal" href={`/`}>About Us</Link>
       <Link align="horizontal" href={`/`}>Careers</Link>
-      <Link align="horizontal" href={`/`}>Community</Link>
+      <Link href={`/`}>Community</Link>
 
       <style jsx>{`
         div {

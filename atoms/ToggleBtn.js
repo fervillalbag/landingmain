@@ -2,11 +2,11 @@
 import { Fragment } from 'react'
 import { colors } from '../settings/colors'
 
-export default function ToggleBtn({ children }) {
+export default function ToggleBtn({ children, handleClick }) {
 
   return (
     <Fragment>
-      <button>
+      <button onClick={handleClick}>
         {children}
       </button>
 

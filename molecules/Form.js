@@ -3,10 +3,15 @@ import Submit from '../atoms/Submit'
 import Input from '../atoms/Input'
 
 export default function Form() {
+
+  const handleSubmit = () => {
+    // console.log('e')
+  }
+
   return (
     <div>
       <Input placeholder="Updates in your box.." />
-      <Submit>Go</Submit>
+      <Submit handleSubmit={handleSubmit}>Go</Submit>
 
       <style jsx>{`
         div {

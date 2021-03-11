@@ -13,17 +13,21 @@ export default function Hero() {
         <Button>Get Started</Button>
       </div>
       <div>
-        <Image src="/illustration-intro.svg" />
+        <Image width="40rem" src="/illustration-intro.svg" />
       </div>
       <style jsx>{`
         section {
-          max-width: 1200px;
+          max-width: 1100px;
           margin: 0 auto;
           width: 90%;
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          align-items: center;
-          padding: 3rem 0;
+          padding: 6rem 0;
+        }
+
+        div:nth-child(2) {
+          display: grid;
+          justify-items: end;
         }
 
         @media screen and (max-width: 768px) {

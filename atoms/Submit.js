@@ -2,15 +2,11 @@
 import { Fragment } from 'react'
 import { colors } from '../settings/colors'
 
-export default function Button({ children, color }) {
-
-  const handleSubmit = e => {
-    e.preventDefault()
-  }
+export default function Button({ children, color, handleSubmit }) {
 
   return (
     <Fragment>
-      <button type="submit" onClick={handleSubmit}>
+      <button type="button" onClick={handleSubmit}>
         {children}
       </button>
 

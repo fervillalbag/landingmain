@@ -26,8 +26,8 @@ export default function Header() {
         <aside>
           <Button>Get Started</Button>
         </aside>
-        <div className="bars" onClick={handleClick}>
-          <ToggleBtn>
+        <div className="bars">
+          <ToggleBtn handleClick={handleClick}>
             {isActive ? (
               <Image src="icon-close.svg" alt="Toggle Btn" />
             ) : (
@@ -43,7 +43,7 @@ export default function Header() {
         }
 
         div {
-          max-width: 1200px;
+          max-width: 1100px;
           width: 90%;
           margin: 0 auto;
           display: flex;
@@ -72,7 +72,7 @@ export default function Header() {
             position: fixed;
             top: 10rem;
             left: 50%;
-            transform: translateX(-50%) translateY(1000px);
+            transform: translateX(-50%) translateY(1100px);
             width: 80%;
             padding: 3rem 0;
             background-color: ${colors.VaryLightGray};

@@ -33,11 +33,11 @@ export default function Footer() {
       <style jsx>{`
         footer {
           background-color: ${colors.VeryDarkBlue};
-          padding: 5rem 0;
+          padding: 6rem 0;
         }  
         
         main {
-          max-width: 1200px;
+          max-width: 1100px;
           width: 90%;
           margin: 0 auto;
           display: grid;

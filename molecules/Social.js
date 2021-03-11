@@ -1,24 +1,25 @@
 
 import Image from '../atoms/Image'
+import LinkRel from '../atoms/LinkRel'
 
 export default function Social() {
   return (
     <div>
-      <a href="https://www.facebook.com/" rel="noreferrer" target="_blank">
+      <LinkRel href="https://www.facebook.com/">
         <Image src="icon-facebook.svg" alt="Facebook icon" />
-      </a>
-      <a href="https://www.youtube.com/" rel="noreferrer" target="_blank">
+      </LinkRel>
+      <LinkRel href="https://www.youtube.com/">
         <Image src="icon-youtube.svg" alt="Youtube icon" />
-      </a>
-      <a href="https://twitter.com/home" rel="noreferrer" target="_blank">
+      </LinkRel>
+      <LinkRel href="https://twitter.com/home">
         <Image src="icon-twitter.svg" alt="Twitter icon" />
-      </a>
-      <a href="https://www.pinterest.com/" rel="noreferrer" target="_blank">
+      </LinkRel>
+      <LinkRel href="https://www.pinterest.com/">
         <Image src="icon-pinterest.svg" alt="Pinterest icon" />
-      </a>
-      <a href="https://instagram.com/" rel="noreferrer" target="_blank">
+      </LinkRel>
+      <LinkRel href="https://instagram.com/">
         <Image src="icon-instagram.svg" alt="Instagram icon" />
-      </a>
+      </LinkRel>
 
       <style jsx>{`
         div {

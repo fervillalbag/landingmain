@@ -32,13 +32,13 @@ export default function Aboutus() {
 
       <style jsx>{`
         section {
-          max-width: 1200px;
+          max-width: 1100px;
           margin: 0 auto;
           width: 90%;
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           grid-column-gap: 6rem;
-          padding: 4rem 0;
+          padding: 6rem 0;
         }
         
         @media screen and (max-width: 950px) {

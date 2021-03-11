@@ -6,10 +6,12 @@ import Aboutus from '../organisms/Aboutus'
 import Review from '../organisms/Review'
 import Docs from '../molecules/Docs'
 import Footer from '../organisms/Footer'
+import SeoTemplate from '../components/SeoTemplate'
 
 export default function Home() {
   return (
     <Fragment>
+      <SeoTemplate />
       <Header />
       <Hero />
       <Aboutus />

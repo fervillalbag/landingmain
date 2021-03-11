@@ -27,11 +27,11 @@ export default function Review() {
 
       <style jsx>{`
         div {
-          max-width: 1200px;
+          max-width: 1100px;
           margin: 0 auto;
           width: 90%;
           text-align: center;
-          padding: 4rem 0;
+          padding: 6rem 0;
         }
 
         main {

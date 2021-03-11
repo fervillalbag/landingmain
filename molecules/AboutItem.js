@@ -1,7 +1,7 @@
 
 import ButtonOff from "../atoms/ButtonOff"
-import Description from "../atoms/Description"
 import Subtitle from "../atoms/Subtitle"
+import Description from "../atoms/Description"
 
 export default function AboutItem({ number, subtitle, description }) {
   return (

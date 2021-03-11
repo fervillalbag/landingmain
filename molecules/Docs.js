@@ -20,7 +20,7 @@ export default function Docs() {
         }
 
         main {
-          max-width: 1200px;
+          max-width: 1100px;
           width: 90%;
           margin: 0 auto;
           display: grid;

@@ -9,7 +9,7 @@ export default function Heading({ children }) {
 
       <style jsx>{`
         h1 {
-          font-size: 5.6rem;          
+          font-size: 6.4rem;          
           font-weight: 700;
           color: ${colors.DarkBlue};
           margin: 1rem 0;

@@ -1,6 +1,6 @@
 ## Documentation workshop
 
-[Live Preview](https://landingmain-git-main-fervillalbag.vercel.app/)
+[Live Preview](https://landingmain-d1angfj60-fervillalbag.vercel.app/)
 
 This is the first work that I develop using the Atomic Design methodology, I still need a lot of documentation to improve the way of writing the code.
 

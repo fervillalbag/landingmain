@@ -1,6 +1,6 @@
 
 import { Fragment } from 'react'
-import { colors } from '../settings/colors'
+import { colors } from '../../settings/colors'
 
 export default function Description({ children, width, size = "1.75", margin = "2" }) {
   return (

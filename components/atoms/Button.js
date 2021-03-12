@@ -1,17 +1,18 @@
 
 import { Fragment } from 'react'
-import { colors } from '../settings/colors'
-
-export default function Button({ children, color, handleSubmit }) {
+import { colors } from '../../settings/colors'
+import Link from 'next/link'
+// ../../settings/colors
+export default function Button({ children, href = "/", color }) {
 
   return (
     <Fragment>
-      <button type="button" onClick={handleSubmit}>
-        {children}
-      </button>
+      <Link href={href}>
+        <a>{children}</a>
+      </Link>
 
       <style jsx>{`
-        button {
+        a {
           background-color: 
           ${color === 'light'
           ? colors.VaryLightGray
@@ -21,9 +22,6 @@ export default function Button({ children, color, handleSubmit }) {
           ? colors.BrightRed
           : colors.VaryLightGray};
 
-          border: none;
-          cursor: pointer;
-          outline: none;
           font-weight: 700;
           padding: 1.1rem 2.5rem;
           font-size: 1.375rem;

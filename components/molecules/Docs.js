@@ -1,7 +1,7 @@
 
 import Button from '../atoms/Button'
 import Title from '../atoms/Title'
-import { colors } from '../settings/colors'
+import { colors } from '../../settings/colors'
 
 export default function Docs() {
   return (

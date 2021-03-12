@@ -1,7 +1,7 @@
 
 import { Fragment } from 'react'
 import Link from 'next/link'
-import { colors } from '../settings/colors'
+import { colors } from '../../settings/colors'
 
 export default function NavLink({ children, href, color, align }) {
   return (

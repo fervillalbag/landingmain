@@ -5,7 +5,7 @@ import Image from '../atoms/Image'
 import ToggleBtn from '../atoms/ToggleBtn'
 import Brand from '../molecules/Brand'
 import HeaderNav from '../molecules/HeaderNav'
-import { colors } from '../settings/colors'
+import { colors } from '../../settings/colors'
 
 export default function Header() {
 

@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import Title from '../atoms/Title'
 import CardReview from '../molecules/CardReview'
-import { DATA_REVIEW_JSON } from '../utils/constants'
+import { DATA_REVIEW_JSON } from '../../utils/constants'
 
 export default function Review() {
 

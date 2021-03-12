@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import Description from "../atoms/Description"
 import Title from "../atoms/Title"
 import AboutItem from "../molecules/AboutItem"
-import { DATA_ABOUT_JSON } from '../utils/constants'
+import { DATA_ABOUT_JSON } from '../../utils/constants'
 
 export default function Aboutus() {
 

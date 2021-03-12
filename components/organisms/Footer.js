@@ -1,5 +1,5 @@
 
-import { colors } from '../settings/colors'
+import { colors } from '../../settings/colors'
 import Image from '../atoms/Image'
 import FooterNav from '../molecules/FooterNav'
 import Social from '../molecules/Social'

@@ -8,7 +8,7 @@ In figma I make a scheme to determine what types of elements are atoms, molecule
 
 ![alt text](https://res.cloudinary.com/da6b7skw8/image/upload/v1615473440/01_r4racn.jpg)
 ![alt text](https://res.cloudinary.com/da6b7skw8/image/upload/v1615473440/02_air6yg.jpg)
-![alt text](https://res.cloudinary.com/da6b7skw8/image/upload/v1615473439/03_zyqpxd.jpg)
+![alt text](https://res.cloudinary.com/da6b7skw8/image/upload/v1615603169/09_hqcqku.jpg)
 
 The development took in total about 6 hours of planning and development
 
